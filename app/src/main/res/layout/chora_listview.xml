@@ -1,12 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="11dp"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="89dp"
+        android:orientation="horizontal"
         android:background="@drawable/buttonshape">
+
+        <ImageView
+            android:id="@+id/choraImageIV"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/aam_pata_jora_jora"
+            android:layout_marginLeft="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/ChoraNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imtiaz Amin"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10.5dp"
+                android:textColor="#ffeb0e"
+
+                />
+
+            <TextView
+                android:id="@+id/ChoraWritterTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imtiaz Amin"
+                android:layout_marginLeft="13dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                />
+
+        </LinearLayout>
 
 
     </LinearLayout>
