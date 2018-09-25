@@ -17,12 +17,6 @@ public class CustomAdapter extends BaseAdapter {
     Context context;
     LayoutInflater inflater;
 
-    public CustomAdapter(String[] choraName, String[] choraWritter, int[] choraPicture, Context context) {
-        this.choraName = choraName;
-        this.choraWritter = choraWritter;
-        this.choraPicture = choraPicture;
-        this.context = context;
-    }
 
     public CustomAdapter(Context context,
                          String[] choraName,

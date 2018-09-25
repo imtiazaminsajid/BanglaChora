@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffae52"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ChoraDetails">
+
+        <ImageView
+            android:id="@+id/detailsImage"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/aam_pata_jora_jora"
+            />
+        <TextView
+            android:id="@+id/detailsChoraName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imtiaz amin"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/detailsChorawritter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imtiaz amin"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/detailsAudioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/speaker"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/detailsChora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imtiaz amin"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,8 +1,11 @@
 package com.example.imtiazaminsajid.banglachora;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,7 +47,26 @@ public class MainActivity extends AppCompatActivity {
         choraWritter = getResources().getStringArray(R.array.ChoraWritter);
         choraDetails = getResources().getStringArray(R.array.Chora);
 
-        CustomAdapter adapter = new CustomAdapter(choraName,choraWritter, choraPicture,this);
+        CustomAdapter adapter = new CustomAdapter(this,
+                choraName,
+                choraWritter,
+                choraDetails,
+                choraPicture,
+                choraAudio);
+
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(MainActivity.this, ChoraDetails.class);
+                intent.putExtra("ChoraName",choraName[i]);
+                intent.putExtra("ChoraWritter",choraWritter[i]);
+                intent.putExtra("ChoraDetails",choraDetails[i]);
+                intent.putExtra("ChoraPic",choraPicture[i]);
+                intent.putExtra("ChoraAudio",choraAudio[i]);
+                startActivity(intent);
+            }
+        });
     }
 }
