@@ -15,6 +15,7 @@ public class ChoraDetails extends AppCompatActivity {
     Button detailsAudio;
     MediaPlayer mediaPlayer;
     boolean isPlaying = false;
+    int currentRyhme = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +36,24 @@ public class ChoraDetails extends AppCompatActivity {
             detailsChora.setText(bundle.getString("ChoraDetails"));
             detailsAudio.setBackgroundResource(bundle.getInt("ChoraAudio"));
 
+            currentRyhme =  bundle.getInt("ChoraAudio");
+
+            mediaPlayer = new MediaPlayer();
+
             detailsAudio.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+
+                    if (!isPlaying){
+                        mediaPlayer.reset();
+                        mediaPlayer = MediaPlayer.create(getApplicationContext(), currentRyhme);
+                        mediaPlayer.start();
+                        isPlaying = true;
+                    } else {
+                        mediaPlayer.stop();
+                        mediaPlayer.reset();
+                        isPlaying=false;
+                    }
 
                 }
             });
@@ -110,4 +126,6 @@ public class ChoraDetails extends AppCompatActivity {
 
 
     }
+
+    
 }
