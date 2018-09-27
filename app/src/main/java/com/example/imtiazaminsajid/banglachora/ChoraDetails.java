@@ -122,10 +122,14 @@ public class ChoraDetails extends AppCompatActivity {
 //                }
 //            });
 //
-        }
+        }   
 
 
     }
 
-    
+    @Override
+    protected void onPause() {
+        mediaPlayer.release();
+        super.onPause();
+    }
 }
