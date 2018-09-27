@@ -122,7 +122,7 @@ public class ChoraDetails extends AppCompatActivity {
 //                }
 //            });
 //
-        }   
+        }
 
 
     }

@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Imtiaz amin"
-            android:textSize="35dp"
+            android:textSize="40dp"
             android:textStyle="bold"
             android:layout_gravity="center"
             />
@@ -44,7 +44,11 @@
             android:id="@+id/detailsAudioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/speaker"
+            android:text="শুনতে এখানে চাপো"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="#f42525"
+            android:background="@drawable/button_effect"
             android:layout_gravity="center"
             />
 
@@ -54,6 +58,8 @@
             android:layout_height="wrap_content"
             android:text="Imtiaz amin"
             android:textSize="23dp"
+            android:gravity="center"
+            android:textColor="#000"
             android:layout_gravity="center"
             />
 

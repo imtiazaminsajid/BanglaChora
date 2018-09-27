@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ChoraDetails"></activity>
+        <activity android:name=".ChoraDetails"
+            android:parentActivityName=".MainActivity"
+            ></activity>
     </application>
 
 </manifest>

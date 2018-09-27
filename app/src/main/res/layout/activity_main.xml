@@ -13,7 +13,8 @@
             android:id="@+id/choraList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:dividerHeight="4dp"
+            android:dividerHeight="5dp"
+            android:listSelector="#f1c76c"
 
             />
 
