@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:text="Imtiaz amin"
             android:textSize="40dp"
+            android:textColor="#3b1d1d"
             android:textStyle="bold"
             android:layout_gravity="center"
             />
